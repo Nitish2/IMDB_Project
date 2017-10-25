@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.android.app.imbdapp.MainActivity">
+
+
+    <item
+        android:orderInCategory="100"
+        android:id="@+id/menu_favorites"
+        android:title="@string/menu_favorites"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_watchlist"
+        android:orderInCategory="150"
+        android:title="@string/menu_watchlist"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_refresh"
+        android:orderInCategory="200"
+        android:title="@string/menu_refresh"
+        app:showAsAction="never" />
+
+
+
+    <item
+        android:id="@+id/movielist"
+        android:title="List"
+        android:icon="@drawable/movielist"
+        app:showAsAction="always">
+
+        <menu android:id="@+id/movies_list_menu">
+            <group>
+                <item android:id="@+id/most_popular"
+                    android:title="Most Popular"
+                    />
+                <item android:id="@+id/up_coming"
+                    android:title="Upcoming Movies"
+                    />
+                <item android:id="@+id/latest_movies"
+                    android:title="Latest Movies"
+                    />
+                <item android:id="@+id/now_playing"
+                    android:title="Now Playing"
+                    />
+                <item android:id="@+id/top_rated"
+                    android:title="Top Rated"
+                    />
+            </group>
+        </menu>
+    </item>
+</menu>
